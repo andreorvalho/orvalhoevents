@@ -1,0 +1,4 @@
+  [1m[35m (476.1ms)[0m  [1m[35mCREATE DATABASE "orvalhoevents_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (425.9ms)[0m  [1m[35mCREATE DATABASE "orvalhoevents_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
