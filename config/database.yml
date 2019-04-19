@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: orvalhoevents_production
-  username: orvalhoevents
+  username: <%= ENV['ORVALHOEVENTS_DATABASE_USER'] %>
   password: <%= ENV['ORVALHOEVENTS_DATABASE_PASSWORD'] %>
