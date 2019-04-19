@@ -64,6 +64,17 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "orvalhoevents_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.sendgrid.net',
+    port:                 587,
+    domain:               'orvalhoevents.com',
+    user_name:            ENV['SENDGRID_USERNAME'],
+    password:             ENV['SENDGRID_PASSWORD'],
+    authentication:       :plain,
+    enable_starttls_auto: true
+  }
+
+  config.action_mailer.default_url_options = { :host => 'polar-headland-56971.herokuapp.com' }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
