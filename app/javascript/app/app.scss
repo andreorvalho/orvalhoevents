@@ -30,3 +30,14 @@ header {
 	background-size: cover;
 	background-position: bottom center;
 }
+
+ul.hmenu {
+  list-style: none;
+  margin: 0 0 2em;
+	padding: 0;
+	text-align: right;
+}
+
+ul.hmenu li {
+  display: inline;
+}
