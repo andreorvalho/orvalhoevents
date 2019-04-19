@@ -65,7 +65,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
   config.action_mailer.smtp_settings = {
-    address:              'smtp.sendgrid.com',
+    address:              'smtp.sendgrid.net',
     port:                 587,
     domain:               'orvalhoevents.com',
     user_name:            ENV['SENDGRID_USERNAME'],
