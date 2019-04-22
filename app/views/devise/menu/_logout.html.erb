@@ -1,5 +1,7 @@
 <% if user_signed_in? %>
   <li>
-    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+    <%= form_tag(destroy_user_session_path, method: :delete) do %>
+      <%= submit_tag 'Logout', class: 'btn btn-success' %>
+    <% end %>
   </li>
 <% end %>
