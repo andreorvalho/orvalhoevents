@@ -1,0 +1,3 @@
+<%- if current_user.has_role?(:admin) %>
+  <%= link_to "Sign users up", new_registration_path(:user) %><br />
+<% end %>
