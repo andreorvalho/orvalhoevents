@@ -12,6 +12,24 @@
   </head>
 
   <body>
+    <header>
+      <div class="container">
+        <% if user_signed_in? %>
+          <div class="d-flex justify-content-end">
+            <%= render 'devise/menu/logout' %>
+            <%= render 'devise/menu/register_link' %>
+          </div>
+        <% end %>
+        <section class="d-flex justify-content-center py-5">
+          <div>
+            <h2>Orvalho Events presents</h2>
+            <h1>Fuego Fest</h1>
+            <h2 class="text-right">Wednesday, 31st July</h2>
+          </div>
+        </section>
+      </div>
+    </header>
+
     <%= yield %>
 
     <%= javascript_pack_tag 'application' %>
