@@ -64,7 +64,7 @@ header {
     @include media-breakpoint-down(sm) {
       height: 200px;
     }
-    
+
 
     &-1 {
       background-image: linear-gradient(
@@ -72,14 +72,14 @@ header {
         rgba($black, 0.5),
       ), url("picture1.jpg");
     }
-  
+
     &-2 {
       background-image: linear-gradient(
         rgba($primary, 0.4),
         rgba($black, 0.5),
       ), url("picture2.jpg");
     }
-  
+
     &-3 {
       background-image: linear-gradient(
         rgba($primary, 0.4),
@@ -92,6 +92,13 @@ header {
         rgba($primary, 0.4),
         rgba($black, 0.5),
       ), url("picture4.jpg");
+    }
+
+    &-omar {
+      background-image: linear-gradient(
+        rgba($primary, 0.4),
+        rgba($black, 0.5),
+      ), url("omar.jpg");
     }
   }
 }
@@ -118,7 +125,7 @@ header {
   background-image: linear-gradient(
     rgba($primary, 0.4),
     rgba($black, 0.5),
-  ), url("concert.jpg");
+  ), url("omar.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -132,4 +139,8 @@ ul.hmenu {
 
 ul.hmenu li {
   display: inline;
+}
+
+.special-link {
+  color: black;
 }
