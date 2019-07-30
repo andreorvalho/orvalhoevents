@@ -11,7 +11,7 @@ class InvitationsController < ApplicationController
     @number = params[:number]
     InviteMailer.invitation(@email, @number).deliver
     flash[:notice] = "Email sent"
-    redirect_to 'index'
+    redirect_to '/email'
   end
 
   private
