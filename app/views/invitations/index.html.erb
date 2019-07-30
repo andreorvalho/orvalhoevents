@@ -1,0 +1,9 @@
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+
+<%= form_with url: '/send' do |form| %>
+  <%= form.text_field :email %>
+  <%= form.text_field :number %>
+  <%= form.submit %>
+<% end %>

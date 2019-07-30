@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+    body,
+    html {
+      background: black;
+      font-size: 1rem;
+      font-family: sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #fff;
+      text-align: center;
+      margin: 0 2rem;
+    }
+
+    h1 {
+      background: linear-gradient(rgba(255, 87, 34, .2), rgba(8, 8, 8, .9)), url(http://www.orvalhoevents.com/packs/media/app/bg-03a3529cdb906149ecaeaf0874c8aaad.jpg);
+      background-size: cover;
+      background-position: bottom;
+      padding: 5rem 0;
+    }
+
+    h2,
+    h3,
+    h4 {
+      color: #ff5722;
+      margin-top: 0;
+    }
+
+    a {
+      color: #ff5722;
+    }
+
+    .box {
+      background: #343a40;
+      padding: 2rem;
+      margin: 0 0 2rem;
+    }
+
+    .box:nth-child(odd),
+    .box:nth-child(odd) h3 {
+      background: #ff5722;
+      color: white;
+    }
+
+  </style>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
