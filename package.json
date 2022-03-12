@@ -7,7 +7,7 @@
     "core-js": "^2.6.12",
     "jquery": "^3.4.0",
     "jquery-ujs": "^1.2.2",
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "popper.js": "^1.14.7",
