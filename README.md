@@ -1,24 +1,21 @@
-# README
+ARG NODE_VERSION=v16.14.0
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+RUN apt-get update; apt install -y curl
+RUN curl https://get.volta.sh | bash
+ENV VOLTA_HOME /root/.volta
+ENV PATH /root/.volta/bin:$PATH
+RUN volta install node@${NODE_VERSION}
+RUN volta install node@${NODE_VERSION} yarn
 
-Things you may want to cover:
+COPY package*json ./
+COPY yarn.* ./
 
-* Ruby version
+RUN rm yarn.lock
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+RUN if [ -f "yarn.lock" ]; then \
+    yarn install; \
+    elif [ -f "package-lock.json" ]; then \
+    npm install; \
+    else \
+    mkdir node_modules; \
+    fi
