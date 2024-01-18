@@ -12,7 +12,10 @@
     "nodemon": "^3.0.1",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "core-js": "^3.21.1",
+    "jquery": "^3.6.0",
+    "jquery-ujs": "^1.2.3"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets",
