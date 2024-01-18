@@ -28,7 +28,7 @@ $card-bg: transparent;
 $card-border-width: $border-width * 3;
 
 // Include BS
-@import "~bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 @include media-breakpoint-down(sm) {
 	h1 {
